@@ -12,7 +12,7 @@ def test_emits():
             print(results)
             assert True
 
-    events.add_event_listener("test add_event_listener", callback)
+    events.on("test add_event_listener", callback)
     events.emit("test add_event_listener", "test data")
 
     events.remove_event_listener("test remove_event_listener")

@@ -22,8 +22,8 @@ Register an event listener for the given `event_name` which uses the defined cal
 def callback(data):
     print(data)
 
-emits.on("my event", callback)
-emits.add_event_listener("my event", callback)
+emits.on("test add_event_listener", callback)
+emits.emit("test add_event_listener", "test data")
 ```
 
 ### `emits.once(event_name, callback)` or `emits.add_event_listener_once(event_name, callback)`
